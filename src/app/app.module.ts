@@ -9,6 +9,8 @@ import { ListUserComponent } from './list-user/list-user.component';
 import { UserComponent } from './user/user.component';
 import { ImgurlPipe } from './imgurl.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { HighlightDirective } from './highlight.directive';
     ListUserComponent,
     UserComponent,
     ImgurlPipe,
-    HighlightDirective
+    HighlightDirective,
+    ContactUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
